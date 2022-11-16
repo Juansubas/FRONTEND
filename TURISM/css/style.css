@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@200&family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(17, 17, 17, 0.4);
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_list {
+    display:flex;
+    list-style: none;
+}
+
+.nav_list .list_links {
+    padding: 0 15px;
+}
+
+.nav_list .list_links a{
+    transition: all .3s ease;
+}
+
+.nav_list .list_links a:hover{
+    color: blue;
+}
