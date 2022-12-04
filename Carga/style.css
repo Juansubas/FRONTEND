@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 43%;
+    left: calc(50% - 80px);
+    animation: ocultar 3.5s linear forwards;
+}
+
+.puntos {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(12, 12, 12);
+    position: relative;
+    top: -20px;
+    left: 135px;
+    animation: puntos 0.5s linear infinite;
+}
+
+@keyframes puntos {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+    
+}
+
+.barra {
+    width: 60%;
+    height: 10vh;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-radius: 50px;
+    overflow: hidden;
+    animation: ocultar 3.5s linear forwards;
+}
+
+.barra_color {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    animation: cargar 3s linear;
+}
+
+/*Para animaciones siempre*/
+@keyframes cargar {
+    /* Hacerlo manual
+    0%{
+        width: 0;
+    }
+    10%{
+        width: 10%;
+    }
+    20%{
+        width: 20%;
+    }
+    */
+
+    /*Para hacerlo en un rango*/
+    from {
+        width: 0;
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes ocultar {
+    88% {
+        transform: scale(1);
+    }
+    99%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
