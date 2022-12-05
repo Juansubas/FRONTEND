@@ -26,4 +26,5 @@ class Math {
   }
 }
 
-export {add, subtract, multiply, divide, secret_number, name, Math};
+export {subtract, multiply, divide, secret_number, Math};
+export default add;
