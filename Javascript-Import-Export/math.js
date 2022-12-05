@@ -2,7 +2,7 @@ const secret_number = 30
 
 let name = 'my math module'
 
-export let x = 30, y = 100;
+let x = 30, y = 100;
 
 function add(x, y) {
   return x + y
@@ -26,5 +26,10 @@ class Math {
   }
 }
 
-export {subtract, multiply, divide, secret_number, Math};
-export default add;
+// Exportar más fácil 
+// export { secret_number, name, x, y, add, subtract, multiply, divide, Math};
+
+export default {
+  add,
+  subtract
+}
