@@ -4,11 +4,11 @@ let name = 'my math module'
 
 let x = 30, y = 100;
 
-function add(x, y) {
+export function add(x, y) {
   return x + y
 }
 
-function subtract(x, y) {
+export function subtract(x, y) {
   return x - y
 }
 
@@ -20,7 +20,7 @@ function divide(x, y) {
   return x / y
 }
 
-class Math {
+export class Math {
   double(x) {
     return x * x
   }
