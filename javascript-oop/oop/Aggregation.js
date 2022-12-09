@@ -1,4 +1,5 @@
 // Los objetos se encuentran haciendo parte de un objeto mayor pasando a ser sus componentes.
+//SIn embargo son independientes.
 
 const company = {
   name: "Juan Tech",
