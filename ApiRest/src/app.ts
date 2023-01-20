@@ -6,6 +6,7 @@ import { router } from "./routes";
 const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(cors());
+//Por defecto carga el index de la ruta asociada.
 app.use(router);
 
 app.listen(PORT, () => console.log(`Listo por el puerto ${PORT}`));
